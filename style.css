@@ -1,1 +1,184 @@
+/* ---------- Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
 
+/* ---------- body ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "PT Serif", sans-serif;
+  color: #333;
+  background-color: #fdfdfd;
+  line-height: 1.7;
+}
+
+h1, h2 {
+  font-family: "Tangerine", cursive;
+}
+
+/* ---------- Header ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  background: linear-gradient(#A66D88, #73484C);
+  color: #F8F2ED;
+  padding: 0.5rem;
+}
+
+header nav {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+header nav a {
+  display: inline-block;
+  margin: 0.3rem;
+  color: white;
+}
+
+.btn {
+  padding: 0.3rem 0.5rem;
+  background: #D99C9C;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #F27983;
+  transition: 0.4s;
+}
+
+/* ---------- Banner ---------- */
+.mizukiheader1 {
+  height: 90vh;
+  background:
+    linear-gradient(rgba(242,235,196,0.3), rgba(115,72,76,0.8)),
+    url("https://static.wikitide.net/projectsekaiwiki/d/dc/Mizuki_51_trained_art.png") center/cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #FFF2F9;
+}
+
+.mizukiheader1 h1 {
+  font-size: 2.5rem;
+}
+
+.mizukiheader1 p {
+  font-size: 1rem;
+}
+
+/* ---------- Solid Color Section ---------- */
+.solid-section {
+  background-color: #F9F7EE;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+/* ---------- gradient Section ---------- */
+
+.gradient-section {
+  background: linear-gradient(to bottom, #543343, #9A8591);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+
+
+/* ----------  Cards Layout ---------- */
+.info,
+.info2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cards,
+.cards2 {
+  width: 90%;
+  max-width: 400px;
+  background-color: #D99C9C;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.cards {
+  border: 3px solid #A66D88;
+   box-shadow: 0 0 15px rgba(166, 109, 136, .9);
+}
+
+.cards2 {
+  border: 3px solid #FEECDF;
+  box-shadow: 0 0 15px rgba(254, 236, 223, .9);
+}
+
+/* ---------- Images ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ---------- Contact ---------- */
+.contact {
+  background-color: #F9F7EE;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact h2 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  color: black;
+  margin-bottom: 1rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  background: linear-gradient(#A66D88, #73484C);
+  color: #FFF9DE;
+  padding: 1rem;
+}
+
+/* ---------- Tablet & Desktop ---------- */
+@media (min-width: 768px) {
+
+  header nav {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .info,
+  .info2 {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .cards,
+  .cards2 {
+    width: 300px;
+  }
+
+  .mizukiheader1 h1 {
+    font-size: 4rem;
+  }
+}
