@@ -16,7 +16,7 @@ body {
   line-height: 1.7;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Tangerine", cursive;
 }
 
@@ -98,7 +98,7 @@ header nav a {
 
 /* ----------  Cards Layout ---------- */
 .info,
-.info2 {
+.info2, .info3 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -106,7 +106,7 @@ header nav a {
 }
 
 .cards,
-.cards2 {
+.cards2, .cards3 {
   width: 90%;
   max-width: 400px;
   background-color: #D99C9C;
@@ -122,6 +122,13 @@ header nav a {
 .cards2 {
   border: 3px solid #FEECDF;
   box-shadow: 0 0 15px rgba(254, 236, 223, .9);
+}
+
+.cards3 {
+  border: 3px solid #A66D88;
+   box-shadow: 0 0 15px rgba(166, 109, 136, .9);
+  margin-top: 1rem;
+ 
 }
 
 /* ---------- Images ---------- */
@@ -151,6 +158,7 @@ textarea {
   margin-bottom: 1rem;
 }
 
+
 /* ---------- Footer ---------- */
 footer {
   text-align: center;
@@ -168,13 +176,13 @@ footer {
   }
 
   .info,
-  .info2 {
+  .info2, .info3 {
     flex-direction: row;
     justify-content: center;
   }
 
   .cards,
-  .cards2 {
+  .cards2, .cards3 {
     width: 300px;
   }
 
