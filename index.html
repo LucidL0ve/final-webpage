@@ -6,15 +6,16 @@
   <title>Final Webpage / Portfolio</title>
 
   <link rel="stylesheet" href="style.css">
-   <link rel="icon" type="image/svg+xml" href="./assets/images/pfp.png"sizes="32x32"/>
+    <link rel="icon" type="image/svg+xml" href="./assets/images/pfp.png" sizes="32x32">
 </head>
 
 <body>
 
 <header>
   <div class="logo">
-    <img src="./assets/images/danchou rui yellow cards collab pfp.png" alt="logoart" width="40">
+    <img src="./assets/images/pfp2.png" alt="Portfolio logo">
   </div>
+
   <nav>
     <a href="#" class="btn">Home</a>
     <a href="#info" class="btn">About</a>
@@ -25,7 +26,7 @@
 <header class="mizukiheader1">
   <div class="overlay">
     <h1>Sunny Villarreal's</h1>
-     <p>Portfolio</p>
+    <p>Portfolio</p>
   </div>
 </header>
 
@@ -34,47 +35,62 @@
 
     <div class="cards">
       <h1>About Me</h1>
-      <p>I'm Sunny, a student at San Jacinto College. I am currently taking graphic design and will graduate May 2027. I love basing artworks on characters, songs, etc.</p>
+      <p>
+        I'm Sunny, a student at San Jacinto College.
+        I am currently taking graphic design and will graduate May 2027.
+      </p>
     </div>
 
     <div class="cards">
-      <img src="./assets/images/headshot.jpg" alt="photo of me">
+      <img src="./assets/images/headshot.jpg" alt="Photo of Sunny">
     </div>
 
     <div class="cards">
       <h1>Talents / Skills</h1>
-      <p>Drawing (Digital & Traditional), Web Design, Character Design, Logo Design, Photoshop, Illustrator, Premiere Pro, Photography.</p>
+      <p>
+        Drawing (Digital & Traditional), Web Design,
+        Character Design, Logo Design, Photoshop,
+        Illustrator, Premiere Pro, Photography.
+      </p>
     </div>
 
   </section>
 </section>
 
 <section class="gradient-section">
+
   <div class="overlay">
     <h1>2026 Artworks</h1>
+    <p>Portfolio</p>
   </div>
 
-  <section class="info2">
+  <!-- Carousel -->
+  <div class="carousel" id="carousel">
 
-    <div class="cards2">
-      <p>Project Sekai x Chainsaw Man Collab</p>
-      <img src="./assets/images/rui kamishiro as makima - @lucid.love_.png" alt="">
+    <div class="slides">
+      <img src="./assets/images/art exibit hopefully.png" alt="art exibit artwork" class="active">
+      <img src="./assets/images/rui kamishiro as makima - @lucid.love_.png" alt="rui kamishiro artwork">
+      <img src="./assets/images/tsukasa val collab finished.png" alt="Tsukasa VAL artwork">
+      <img src="./assets/images/danchou rui yellow cards collab.png" alt="rui yellow card artwork">
+      <img src="./assets/images/nene trained collab art 2.png" alt="nene green card artwork">
+      <img src="./assets/images/varessa.jpg" alt="varessa artwork">
+      <img src="./assets/images/citlali.jpg" alt="citlali artwork">
     </div>
 
-    <div class="cards2">
-      <p>Project Sekai Valentines Collab</p>
-      <img src="./assets/images/tsukasa val collab finished.png" alt="">
-    </div>
+    <button id="prevBtn" class="carousel-btn" aria-label="Previous image">
+      Prev
+    </button>
 
-    <div class="cards2">
-      <p>Art Exhibit of an Original Character</p>
-      <img src="./assets/images/art exibit hopefully.png" alt="">
-    </div>
+    <button id="nextBtn" class="carousel-btn" aria-label="Next image">
+      Next
+    </button>
 
-  </section>
+  </div>
+
 </section>
 
 <section class="contact" id="contact">
+
   <h2>Contact</h2>
 
   <form>
@@ -89,30 +105,34 @@
 
     <button type="submit" class="buttonsend">Send</button>
   </form>
-   <section class="info2">
-  <div class="cards3">
-    <h1>Links to my socials</h1>
-    <a href=" https://www.instagram.com/lucid.love_/" target="_blank">Instagram</a>
-   <a href="https://lucidloveinfo.carrd.co" target="_blank">Carrd</a>
-    <a href="https://x.com/Lucidlove___?s=20" target="_blank">Twitter</a>
-    <a href="https://bsky.app/profile/lucidlove.bsky.social" target="_blank">BlueSky</a>
-    <a href=" https://www.threads.com/@lucid.love_" target="_blank">Threads</a>
-     </div>
-     <div class="cards3">
-        <h1>Commission sites</h1>
-       <a href="https://vgen.co/Lucidlove_" target="_blank">Vgen</a>
-       <a href="https://ko-fi.com/lucidlove__" target="_blank">Ko-Fi</a>
-     
-     </div>
- 
-    </section>
+
+  <section class="info2">
+
+    <div class="cards3">
+      <h1>Links to my socials</h1>
+
+      <a href="https://www.instagram.com/lucid.love_/" target="_blank">Instagram</a>
+      <a href="https://lucidloveinfo.carrd.co" target="_blank">Carrd</a>
+      <a href="https://x.com/Lucidlove___?s=20" target="_blank">Twitter</a>
+      <a href="https://bsky.app/profile/lucidlove.bsky.social" target="_blank">BlueSky</a>
+    </div>
+
+    <div class="cards3">
+      <h1>Commission Sites</h1>
+
+      <a href="https://vgen.co/Lucidlove_" target="_blank">VGen</a>
+      <a href="https://ko-fi.com/lucidlove__" target="_blank">Ko-Fi</a>
+    </div>
+
+  </section>
+
 </section>
-  
-  
 
 <footer>
   <p>© My final webpage.</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
